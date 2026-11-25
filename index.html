@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Gardit &amp; Co. Advocates | Legal Services in Juba, South Sudan</title>
+<meta name="description" content="Gardit &amp; Co. Advocates is a legal practice in Hai Malakal, Juba, South Sudan, providing dependable counsel and representation.">
+<meta name="theme-color" content="#eef0f3">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;1,6..72,300;1,6..72,400&family=Inter+Tight:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<script type="importmap">
+{ "imports": {
+  "three": "https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js",
+  "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/"
+} }
+</script>
+
+<style>
+:root{
+  --bg:#eef0f3; --ink:#0b1220; --mute:rgba(11,18,32,.68); --line:rgba(11,18,32,.14);
+  --cobalt:#2f4bff; --cobalt2:#1b2fa0; --brass:#b08d57;
+  --glass:rgba(255,255,255,.76); --serif:'Newsreader','Times New Roman',serif; --sans:'Inter Tight',system-ui,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scrollbar-width:none;-webkit-text-size-adjust:100%}
+html::-webkit-scrollbar{display:none}
+body{background:linear-gradient(#cfdbea,#f1eee8);color:var(--ink);font-family:var(--sans);font-weight:400;line-height:1.6;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
+#gl{position:fixed;inset:0;width:100%;height:100%;display:block;z-index:0}
+.soft{position:fixed;inset:0;z-index:1;pointer-events:none;background:radial-gradient(ellipse at center,transparent 55%,rgba(11,18,32,.14) 100%)}
+
+/* preloader */
+#pre{position:fixed;inset:0;z-index:100;background:#eef0f3;display:grid;place-items:center;transition:opacity 1s ease .15s,visibility 1s .15s}
+body.loaded #pre{opacity:0;visibility:hidden;pointer-events:none}
+.pre-in{text-align:center;padding:0 20px}
+.pre-mark{width:74px;height:74px;margin:0 auto 22px;border:1px solid var(--ink);display:grid;place-items:center;font-family:var(--serif);font-size:30px;font-style:italic;position:relative}
+.pre-mark::after{content:"";position:absolute;inset:-8px;border:1px solid var(--cobalt);clip-path:polygon(0 0,40% 0,40% 1px,1px 1px,1px 40%,0 40%);animation:corner 2s ease-in-out infinite}
+@keyframes corner{0%,100%{transform:rotate(0)}50%{transform:rotate(90deg)}}
+.pre-name{font-family:var(--serif);font-size:clamp(26px,4.4vw,42px);letter-spacing:.04em}
+.pre-name em{font-style:italic;color:var(--cobalt)}
+.pre-sub{font-size:11px;letter-spacing:.5em;text-transform:uppercase;color:var(--mute);margin-top:4px}
+.pre-bar{width:min(240px,60vw);height:1px;background:var(--line);margin:26px auto 10px;overflow:hidden}
+.pre-bar i{display:block;height:100%;background:var(--cobalt);transform:scaleX(0);transform-origin:left}
+.pre-pct{font-size:12px;letter-spacing:.3em;color:var(--mute);font-variant-numeric:tabular-nums}
+#pre .msg{display:none;margin:18px auto 0;font-size:13px;color:var(--mute);max-width:320px}
+
+/* nav */
+nav.top{position:fixed;top:0;left:0;right:0;z-index:50;display:flex;align-items:center;justify-content:space-between;padding:20px 4vw;gap:20px;transition:all .4s}
+nav.top.scrolled{padding-top:12px;padding-bottom:12px;background:rgba(238,240,243,.78);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.brand{display:flex;align-items:center;gap:14px}
+.brand .mk{width:42px;height:42px;border:1px solid var(--ink);display:grid;place-items:center;font-family:var(--serif);font-size:19px;font-style:italic;background:rgba(255,255,255,.5)}
+.brand b{display:block;font-family:var(--serif);font-weight:500;font-size:21px;line-height:1.05;letter-spacing:.01em}
+.brand small{display:block;font-size:9.5px;letter-spacing:.38em;text-transform:uppercase;color:var(--mute)}
+.links{display:flex;gap:30px;font-size:12px;letter-spacing:.16em;text-transform:uppercase;font-weight:500}
+.links a{position:relative;padding:6px 0;color:var(--mute);transition:color .3s}
+.links a::after{content:"";position:absolute;left:0;bottom:0;height:1px;width:100%;background:var(--cobalt);transform:scaleX(0);transform-origin:right;transition:transform .5s cubic-bezier(.2,.8,.2,1)}
+.links a:hover,.links a.on{color:var(--ink)}
+.links a:hover::after,.links a.on::after{transform:scaleX(1);transform-origin:left}
+.btn{display:inline-flex;align-items:center;gap:12px;padding:16px 28px;border-radius:4px;font-size:12px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;
+  background:var(--cobalt);color:#fff;position:relative;overflow:hidden;transition:transform .3s,box-shadow .35s,background .3s;box-shadow:0 14px 34px -14px rgba(47,75,255,.7)}
+.btn:hover{background:var(--cobalt2);transform:translateY(-2px);box-shadow:0 20px 40px -14px rgba(47,75,255,.8)}
+.btn svg{width:16px;height:16px;stroke:currentColor;fill:none;stroke-width:1.6}
+.btn.ghost{background:rgba(255,255,255,.7);color:var(--ink);border:1px solid var(--line);box-shadow:none;backdrop-filter:blur(8px)}
+.btn.ghost:hover{border-color:var(--ink);background:#fff}
+.btn.sm{padding:12px 20px}
+
+/* layout */
+main{position:relative;z-index:10}
+section{min-height:100vh;min-height:100svh;padding:15vh 7vw 11vh;display:flex;align-items:center;position:relative}
+.left{max-width:640px}
+.right{max-width:580px;margin-left:auto}
+.panel{padding:clamp(26px,3.2vw,46px);background:var(--glass);border:1px solid rgba(255,255,255,.7);backdrop-filter:blur(18px) saturate(1.2);-webkit-backdrop-filter:blur(18px) saturate(1.2);border-radius:8px;box-shadow:0 40px 90px -50px rgba(11,18,32,.55)}
+.eyebrow{display:flex;align-items:center;gap:14px;font-size:11px;letter-spacing:.34em;text-transform:uppercase;color:var(--cobalt);font-weight:600;margin-bottom:24px}
+.eyebrow b{font-family:var(--serif);font-style:italic;font-weight:400;font-size:17px;letter-spacing:.05em;color:var(--ink)}
+.eyebrow::after{content:"";width:46px;height:1px;background:var(--cobalt)}
+h1,h2{font-family:var(--serif);font-weight:400;line-height:1.02;letter-spacing:-.018em}
+h1{font-size:clamp(46px,6.8vw,104px)}
+h2{font-size:clamp(36px,4.6vw,70px);margin-bottom:22px}
+h1 em,h2 em{font-style:italic;color:var(--cobalt)}
+p.lead{font-size:clamp(16px,1.25vw,18px);color:var(--mute);max-width:540px;font-weight:400}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:34px}
+.glass{background:var(--glass);border:1px solid rgba(255,255,255,.75);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border-radius:8px;box-shadow:0 24px 60px -36px rgba(11,18,32,.5)}
+
+/* reveal */
+.rv{opacity:0;transform:translateY(32px);filter:blur(6px);transition:opacity .9s cubic-bezier(.2,.7,.2,1),transform .9s cubic-bezier(.2,.7,.2,1),filter .9s;transition-delay:calc(var(--d,0)*90ms + .1s)}
+.in .rv{opacity:1;transform:none;filter:none}
+.w{display:inline-block;overflow:hidden;vertical-align:top;padding:0 .05em .16em;margin-bottom:-.16em}
+.w>span{display:inline-block;transform:translateY(118%) rotate(4deg);transition:transform 1.15s cubic-bezier(.2,.8,.2,1);transition-delay:calc(var(--i)*70ms + .15s)}
+.in .w>span{transform:none}
+
+/* hero */
+#hero::before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(238,240,243,.88) 0%,rgba(238,240,243,.55) 38%,transparent 65%);pointer-events:none}
+#hero .left{position:relative}
+#hero .meta{display:flex;flex-wrap:wrap;gap:10px 30px;margin-top:46px;padding-top:22px;border-top:1px solid var(--line);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--mute);font-weight:500}
+.scrollcue{position:absolute;left:7vw;bottom:34px;display:flex;align-items:center;gap:14px;font-size:10px;letter-spacing:.4em;text-transform:uppercase;color:var(--mute)}
+.scrollcue i{width:60px;height:1px;background:linear-gradient(90deg,var(--cobalt),transparent);animation:drip 2s ease-in-out infinite;transform-origin:left}
+@keyframes drip{0%{transform:scaleX(0)}50%{transform:scaleX(1)}100%{transform:scaleX(1);opacity:0}}
+
+/* about */
+.pillars{display:grid;gap:0;margin-top:30px;border-top:1px solid var(--line)}
+.pillar{display:flex;gap:22px;padding:18px 0;border-bottom:1px solid var(--line);align-items:flex-start}
+.pillar b{font-family:var(--serif);font-style:italic;font-weight:400;font-size:28px;color:var(--cobalt);line-height:1;min-width:34px}
+.pillar h4{font-size:12.5px;letter-spacing:.22em;text-transform:uppercase;font-weight:600;margin-bottom:2px}
+.pillar p{font-size:14.5px;color:var(--mute)}
+
+/* practice */
+#practice{flex-direction:column;align-items:stretch;justify-content:flex-end}
+#practice .head{display:flex;justify-content:space-between;align-items:flex-end;gap:30px;flex-wrap:wrap;margin-bottom:28px}
+#practice .head .t{padding:26px 32px 14px}
+#practice h2{margin:0}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;perspective:1100px}
+.card{padding:26px 26px 24px;position:relative;transform-style:preserve-3d;transition:transform .25s ease-out,border-color .4s;overflow:hidden;min-height:176px}
+.card::before{content:"";position:absolute;left:0;top:0;height:3px;width:100%;background:var(--cobalt);transform:scaleX(0);transform-origin:left;transition:transform .6s cubic-bezier(.2,.8,.2,1)}
+.card:hover::before{transform:scaleX(1)}
+.card::after{content:"";position:absolute;inset:0;background:radial-gradient(380px circle at var(--mx,50%) var(--my,0%),rgba(47,75,255,.1),transparent 55%);opacity:0;transition:opacity .35s;pointer-events:none}
+.card:hover::after{opacity:1}
+.card .n{font-family:var(--serif);font-style:italic;font-size:17px;color:var(--cobalt)}
+.card h3{font-family:var(--serif);font-weight:500;font-size:26px;line-height:1.08;margin:20px 0 8px;transform:translateZ(26px)}
+.card p{font-size:14px;color:var(--mute);transform:translateZ(10px)}
+
+/* process */
+.steps{position:relative;margin-top:30px;padding-left:46px}
+.steps::before{content:"";position:absolute;left:11px;top:6px;bottom:6px;width:1px;background:linear-gradient(var(--cobalt),rgba(47,75,255,.1));transform-origin:top;transform:scaleY(0);transition:transform 2.2s cubic-bezier(.3,.7,.2,1) .3s}
+.in .steps::before{transform:scaleY(1)}
+.step{position:relative;padding-bottom:24px}
+.step:last-child{padding-bottom:0}
+.step::before{content:"";position:absolute;left:-41px;top:8px;width:11px;height:11px;border-radius:50%;background:#fff;border:1px solid var(--cobalt);box-shadow:0 0 0 4px rgba(47,75,255,.12)}
+.step small{font-size:11px;letter-spacing:.3em;color:var(--cobalt);text-transform:uppercase;font-weight:600}
+.step h4{font-family:var(--serif);font-size:30px;font-weight:500;line-height:1.1;margin:2px 0 3px}
+.step p{font-size:14.5px;color:var(--mute);max-width:430px}
+
+/* trust */
+.vals{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:28px}
+.val{padding:20px 20px 18px;background:rgba(255,255,255,.7);border:1px solid var(--line);border-radius:6px}
+.val svg{width:28px;height:28px;stroke:var(--cobalt);fill:none;stroke-width:1.3;margin-bottom:12px}
+.val h4{font-family:var(--serif);font-size:23px;font-weight:500;line-height:1.1;margin-bottom:4px}
+.val p{font-size:13.5px;color:var(--mute)}
+
+/* contact */
+#contact{flex-direction:column;align-items:stretch;justify-content:center;padding-bottom:0}
+.contact-wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:36px;align-items:center;margin-bottom:8vh}
+.info{padding:30px 32px 26px;display:grid;gap:20px}
+.info .row{display:flex;gap:18px;align-items:flex-start}
+.info .row svg{flex:none;width:22px;height:22px;stroke:var(--cobalt);fill:none;stroke-width:1.4;margin-top:3px}
+.info small{display:block;font-size:10.5px;letter-spacing:.3em;text-transform:uppercase;color:var(--cobalt);font-weight:600;margin-bottom:2px}
+.info span{font-size:16.5px}
+.info .sub{font-size:13px;color:var(--mute);display:block}
+.info a.u{border-bottom:1px solid var(--cobalt)}
+.copy{margin-left:12px;font-size:11px;letter-spacing:.16em;text-transform:uppercase;font-weight:600;color:var(--cobalt);border:1px solid rgba(47,75,255,.35);border-radius:4px;padding:4px 10px;vertical-align:middle;transition:all .3s}
+.copy:hover{background:var(--cobalt);color:#fff}
+footer{border-top:1px solid var(--line);padding:22px 0 96px;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;font-size:12px;color:var(--mute);letter-spacing:.05em;background:linear-gradient(transparent,rgba(238,240,243,.8))}
+footer em{font-style:normal;color:var(--ink);font-weight:600}
+
+/* HUD */
+.topbar{position:fixed;left:0;top:0;height:2px;z-index:60;background:var(--cobalt);width:calc(var(--p,0)*100%)}
+.tl{position:fixed;right:2vw;top:50%;transform:translateY(-50%);z-index:40;display:flex;flex-direction:column;gap:6px;align-items:flex-end}
+.tl a{display:flex;align-items:center;gap:12px;padding:5px 0;font-size:10.5px;letter-spacing:.24em;text-transform:uppercase;color:rgba(11,18,32,.45);transition:color .3s;font-weight:500}
+.tl a b{font-family:var(--serif);font-style:italic;font-weight:400;font-size:14px;letter-spacing:.04em;opacity:.7}
+.tl a i{width:20px;height:1px;background:currentColor;transition:width .4s}
+.tl a:hover{color:var(--ink)}
+.tl a.on{color:var(--cobalt)}
+.tl a.on i{width:44px}
+.tour{position:fixed;left:4vw;bottom:24px;z-index:45;display:flex;align-items:center;gap:14px;padding:8px 22px 8px 8px;border-radius:999px;font-size:11px;letter-spacing:.2em;text-transform:uppercase;font-weight:600}
+.tour:hover{border-color:var(--cobalt)}
+.tour .ring{position:relative;width:38px;height:38px;border-radius:50%;background:conic-gradient(var(--cobalt) calc(var(--p,0)*360deg),rgba(11,18,32,.14) 0);display:grid;place-items:center}
+.tour .ring::before{content:"";position:absolute;inset:3px;border-radius:50%;background:#fff}
+.tour .ring svg{position:relative;width:12px;height:12px;fill:var(--cobalt)}
+.tour .pause{display:none}.tour.on .pause{display:block}.tour.on .play{display:none}
+.tour.on{border-color:var(--cobalt)}
+.count{position:fixed;right:4vw;bottom:30px;z-index:40;font-family:var(--serif);font-size:24px;color:var(--mute);display:none}
+.hint{position:fixed;left:50%;bottom:30px;transform:translateX(-50%);z-index:40;font-size:10px;letter-spacing:.34em;text-transform:uppercase;color:var(--mute);display:flex;gap:10px;align-items:center}
+.hint kbd{font-family:var(--sans);border:1px solid var(--line);border-radius:3px;padding:1px 7px;background:rgba(255,255,255,.6)}
+
+@media (max-width:1100px){.tl a span{display:none}.tl a b{display:none}}
+@media (max-width:980px){
+  .links{display:none}
+  .grid{grid-template-columns:repeat(2,1fr)}
+  .contact-wrap{grid-template-columns:1fr}
+  .right{margin-left:0}
+  .hint{display:none}
+}
+@media (max-width:640px){
+  section{padding:15vh 5vw 14vh}
+  .grid{grid-template-columns:1fr}
+  .card{min-height:0}
+  .vals{grid-template-columns:1fr}
+  nav.top .btn{display:none}
+  .tl{display:none}
+  .tour{left:50%;transform:translateX(-50%)}
+  #hero{align-items:flex-end}
+  #hero::before{background:linear-gradient(0deg,rgba(238,240,243,.9) 0%,rgba(238,240,243,.6) 55%,transparent 100%)}
+  .scrollcue{display:none}
+}
+@media (prefers-reduced-motion:reduce){.rv,.w>span{transition-duration:.01s}}
+</style>
+</head>
+<body>
+
+<div id="pre">
+  <div class="pre-in">
+    <div class="pre-mark">G</div>
+    <div class="pre-name">Gardit <em>&amp;</em> Co.</div>
+    <div class="pre-sub">Advocates</div>
+    <div class="pre-bar"><i id="prebar"></i></div>
+    <div class="pre-pct" id="prepct">0%</div>
+    <div class="msg" id="premsg">The 3D scene could not load (it needs an internet connection and WebGL). The site content is still available below.</div>
+  </div>
+</div>
+
+<canvas id="gl" aria-hidden="true"></canvas>
+<div class="soft"></div>
+<div class="topbar" id="topbar"></div>
+
+<nav class="top" id="nav">
+  <a class="brand" href="#hero" data-go="0" aria-label="Gardit &amp; Co. Advocates home">
+    <span class="mk">G</span>
+    <span><b>Gardit &amp; Co.</b><small>Advocates</small></span>
+  </a>
+  <div class="links" id="links">
+    <a href="#hero" data-go="0">Home</a>
+    <a href="#about" data-go="1">The Practice</a>
+    <a href="#practice" data-go="2">Expertise</a>
+    <a href="#process" data-go="3">Process</a>
+    <a href="#trust" data-go="4">Standards</a>
+    <a href="#contact" data-go="5">Contact</a>
+  </div>
+  <a class="btn sm" href="tel:+211922991981">Call us</a>
+</nav>
+
+<aside class="tl" id="tl" aria-label="Section navigation">
+  <a href="#hero" data-go="0"><span>Home</span><b>i</b><i></i></a>
+  <a href="#about" data-go="1"><span>Practice</span><b>ii</b><i></i></a>
+  <a href="#practice" data-go="2"><span>Expertise</span><b>iii</b><i></i></a>
+  <a href="#process" data-go="3"><span>Process</span><b>iv</b><i></i></a>
+  <a href="#trust" data-go="4"><span>Standards</span><b>v</b><i></i></a>
+  <a href="#contact" data-go="5"><span>Contact</span><b>vi</b><i></i></a>
+</aside>
+
+<button class="tour glass" id="tour" aria-pressed="false" aria-label="Toggle auto tour">
+  <span class="ring"><svg class="play" viewBox="0 0 12 12"><path d="M2 1l9 5-9 5z"/></svg><svg class="pause" viewBox="0 0 12 12"><path d="M2 1h3v10H2zM7 1h3v10H7z"/></svg></span>
+  <span id="tourlabel">Auto tour</span>
+</button>
+<div class="hint"><kbd>&darr;</kbd><kbd>&uarr;</kbd> to navigate</div>
+
+<main id="main">
+
+  <!-- 1 HERO -->
+  <section id="hero" data-title="Home">
+    <div class="left">
+      <div class="eyebrow rv"><b>i.</b> Gardit &amp; Co. Advocates &middot; Juba</div>
+      <h1 data-split>Law practised with <em>precision</em> and integrity.</h1>
+      <p class="lead rv" style="--d:9;margin-top:28px">Gardit &amp; Co. Advocates is a legal practice in Hai Malakal, Juba, providing dependable counsel and representation to individuals, families and businesses.</p>
+      <div class="cta rv" style="--d:10">
+        <a class="btn" href="tel:+211922991981"><svg viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg>Book a consultation</a>
+        <a class="btn ghost" href="#about" data-go="1">Explore the practice</a>
+      </div>
+      <div class="meta rv" style="--d:11">
+        <span>Hai Malakal, Juba</span>
+        <span>+211 922 991 981</span>
+      </div>
+    </div>
+    <div class="scrollcue"><span>Scroll</span><i></i></div>
+  </section>
+
+  <!-- 2 ABOUT -->
+  <section id="about" data-title="The Practice">
+    <div class="right panel">
+      <div class="eyebrow rv"><b>ii.</b> The Practice</div>
+      <h2 data-split>Principled advice, <em>practical</em> outcomes.</h2>
+      <p class="lead rv" style="--d:3">We help clients understand where they stand, what their options are and what to do next. Our advice is direct, carefully prepared and built to be acted on.</p>
+      <div class="pillars">
+        <div class="pillar rv" style="--d:4"><b>1</b><div><h4>Integrity</h4><p>Honest assessments and strict confidentiality in every matter.</p></div></div>
+        <div class="pillar rv" style="--d:5"><b>2</b><div><h4>Precision</h4><p>Careful attention to detail, from the first document to the final submission.</p></div></div>
+        <div class="pillar rv" style="--d:6"><b>3</b><div><h4>Accessibility</h4><p>Plain-language advice and a practice that is easy to reach.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3 PRACTICE -->
+  <section id="practice" data-title="Expertise">
+    <div class="head">
+      <div class="t panel" style="padding-bottom:20px">
+        <div class="eyebrow rv" style="margin-bottom:16px"><b>iii.</b> Areas of Expertise</div>
+        <h2 data-split>Counsel across the <em>law.</em></h2>
+      </div>
+    </div>
+    <div class="grid">
+      <article class="card glass rv" style="--d:1"><span class="n">01</span><h3>Commercial &amp; Corporate</h3><p>Company matters, contracts and agreements for businesses at every stage.</p></article>
+      <article class="card glass rv" style="--d:2"><span class="n">02</span><h3>Litigation &amp; Advocacy</h3><p>Preparation and representation when a dispute needs to be argued.</p></article>
+      <article class="card glass rv" style="--d:3"><span class="n">03</span><h3>Property &amp; Conveyancing</h3><p>Title checks, transfers, leases and disputes, handled with care.</p></article>
+      <article class="card glass rv" style="--d:4"><span class="n">04</span><h3>Family &amp; Estates</h3><p>Sensitive family matters, wills and succession, guided with clarity.</p></article>
+      <article class="card glass rv" style="--d:5"><span class="n">05</span><h3>Employment Law</h3><p>Contracts and workplace issues for employers and employees alike.</p></article>
+      <article class="card glass rv" style="--d:6"><span class="n">06</span><h3>Advisory &amp; Compliance</h3><p>Practical guidance so you remain on the right side of the rules.</p></article>
+    </div>
+  </section>
+
+  <!-- 4 PROCESS -->
+  <section id="process" data-title="Process">
+    <div class="left panel">
+      <div class="eyebrow rv"><b>iv.</b> Our Process</div>
+      <h2 data-split>From first call to <em>final outcome.</em></h2>
+      <div class="steps rv" style="--d:2">
+        <div class="step"><small>Step 01</small><h4>Intake</h4><p>We listen to your situation and understand your objectives before advising.</p></div>
+        <div class="step"><small>Step 02</small><h4>Assessment</h4><p>A clear view of your position, your options and the likely route forward.</p></div>
+        <div class="step"><small>Step 03</small><h4>Action</h4><p>We draft, negotiate, file or represent, whichever your matter requires.</p></div>
+        <div class="step"><small>Step 04</small><h4>Resolution</h4><p>We keep you informed throughout and see the matter through to its close.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5 STANDARDS -->
+  <section id="trust" data-title="Standards">
+    <div class="right panel">
+      <div class="eyebrow rv"><b>v.</b> Our Standards</div>
+      <h2 data-split>What you can <em>expect</em> from us.</h2>
+      <p class="lead rv" style="--d:3">Legal matters are rarely small to the people facing them. These are the standards we hold ourselves to.</p>
+      <div class="vals">
+        <div class="val rv" style="--d:4"><svg viewBox="0 0 32 32"><path d="M16 4l11 4v8c0 7-5 11-11 13C10 27 5 23 5 16V8z"/><path d="M11 16l4 4 7-8"/></svg><h4>Confidentiality</h4><p>Your matter stays your matter.</p></div>
+        <div class="val rv" style="--d:5"><svg viewBox="0 0 32 32"><path d="M5 7h22v15H13l-8 5z"/><path d="M11 13h10M11 17h6"/></svg><h4>Candour</h4><p>Honest, plain-language advice.</p></div>
+        <div class="val rv" style="--d:6"><svg viewBox="0 0 32 32"><circle cx="16" cy="16" r="11"/><path d="M16 9v7l5 3"/></svg><h4>Diligence</h4><p>Careful preparation, on time.</p></div>
+        <div class="val rv" style="--d:7"><svg viewBox="0 0 32 32"><path d="M7 5h4l2 6-3 2a14 14 0 0 0 7 7l2-3 6 2v4a2 2 0 0 1-2 2A19 19 0 0 1 5 7a2 2 0 0 1 2-2z"/></svg><h4>Accessibility</h4><p>Reach us directly by phone.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6 CONTACT -->
+  <section id="contact" data-title="Contact">
+    <div class="contact-wrap">
+      <div class="left panel">
+        <div class="eyebrow rv"><b>vi.</b> Contact</div>
+        <h2 data-split>Speak with an <em>advocate.</em></h2>
+        <p class="lead rv" style="--d:4">Call the chambers to arrange a consultation. We will listen first, then advise you honestly on how we can help.</p>
+        <div class="cta rv" style="--d:5">
+          <a class="btn" href="tel:+211922991981"><svg viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg>Call +211 922 991 981</a>
+          <a class="btn ghost" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=RJR4%2B7C7%20Hai%20Malakal%20Juba">Get directions</a>
+        </div>
+      </div>
+      <div class="info glass rv" style="--d:3">
+        <div class="row"><svg viewBox="0 0 24 24"><path d="M12 21s7-6.200 7-12a7 7 0 1 0-14 0c0 5.800 7 12 7 12z"/><circle cx="12" cy="9" r="2.500"/></svg>
+          <div><small>Chambers</small><span>Hai Malakal, Cementry Junction<br>Juba, South Sudan</span><span class="sub">Plus Code: RJR4+7C7</span></div></div>
+        <div class="row"><svg viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.500 1.500a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg>
+          <div><small>Telephone</small><span><a href="tel:+211922991981">+211 922 991 981</a><button class="copy" id="copy" type="button">Copy</button></span></div></div>
+        <div class="row"><svg viewBox="0 0 24 24"><path d="M9 20l-5-2V5l5 2 6-2 5 2v13l-5-2z"/><path d="M9 7v13M15 5v13"/></svg>
+          <div><small>Find us</small><span><a class="u" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=RJR4%2B7C7%20Hai%20Malakal%20Juba">Open in Google Maps</a></span></div></div>
+      </div>
+    </div>
+    <footer>
+      <span>&copy; 2026 <em>Gardit &amp; Co. Advocates</em>. All rights reserved.</span>
+      <span>Information on this site is general and is not legal advice.</span>
+    </footer>
+  </section>
+</main>
+
+<script>
+window.__reveal = function(){ document.body.classList.add('loaded'); };
+setTimeout(function(){
+  if(!window.__3dStarted){
+    document.getElementById('premsg').style.display='block';
+    setTimeout(function(){ window.__reveal(); document.querySelectorAll('section').forEach(function(s){s.classList.add('in')}); },2600);
+  }
+}, 9000);
+</script>
+
+<script type="module">
+import * as THREE from 'three';
+import { RoomEnvironment } from 'three/addons/environments/RoomEnvironment.js';
+
+window.__3dStarted = true;
+history.scrollRestoration = 'manual';
+scrollTo(0,0);
+
+const reduceMotion = matchMedia('(prefers-reduced-motion: reduce)').matches;
+const isMobile = matchMedia('(max-width: 800px)').matches;
+const $ = (s,r=document)=>r.querySelector(s);
+const $$ = (s,r=document)=>[...r.querySelectorAll(s)];
+const clamp = (v,a,b)=>Math.min(b,Math.max(a,v));
+const V = (x,y,z)=>new THREE.Vector3(x,y,z);
+
+/* ---------------------------------------------------------------- renderer */
+const renderer = new THREE.WebGLRenderer({ canvas:$('#gl'), antialias:true, powerPreference:'high-performance' });
+renderer.setPixelRatio(Math.min(devicePixelRatio, isMobile ? 1.5 : 2));
+renderer.setSize(innerWidth, innerHeight);
+renderer.toneMapping = THREE.NeutralToneMapping;
+renderer.toneMappingExposure = 1.0;
+renderer.shadowMap.enabled = !isMobile;
+renderer.shadowMap.type = THREE.PCFSoftShadowMap;
+
+const scene = new THREE.Scene();
+(function sky(){
+  const c = document.createElement('canvas'); c.width = 4; c.height = 256;
+  const g = c.getContext('2d'), gr = g.createLinearGradient(0,0,0,256);
+  gr.addColorStop(0,'#bcd0e8'); gr.addColorStop(0.55,'#dde7f2'); gr.addColorStop(1,'#f1eee8');
+  g.fillStyle = gr; g.fillRect(0,0,4,256);
+  const t = new THREE.CanvasTexture(c); t.colorSpace = THREE.SRGBColorSpace; scene.background = t;
+})();
+scene.fog = new THREE.FogExp2(0xe6eaef, 0.0105);
+const pmrem = new THREE.PMREMGenerator(renderer);
+scene.environment = pmrem.fromScene(new RoomEnvironment(), 0.04).texture;
+scene.environmentIntensity = 0.5;
+
+const camera = new THREE.PerspectiveCamera(45, innerWidth/innerHeight, 0.1, 400);
+
+/* --------------------------------------------------------------- materials */
+const stone = new THREE.MeshStandardMaterial({ color:0xefeadf, roughness:0.72 });
+const stoneDk = new THREE.MeshStandardMaterial({ color:0xd8d2c5, roughness:0.78 });
+const polished = new THREE.MeshPhysicalMaterial({ color:0xf5f2ec, roughness:0.16, clearcoat:0.6, clearcoatRoughness:0.2 });
+const brass = new THREE.MeshStandardMaterial({ color:0xb8934f, metalness:1, roughness:0.27 });
+const cobalt = new THREE.MeshPhysicalMaterial({ color:0x2f4bff, roughness:0.22, metalness:0.15, clearcoat:1, clearcoatRoughness:0.1 });
+const carpet = new THREE.MeshStandardMaterial({ color:0x1b2fa0, roughness:0.9 });
+const glass = new THREE.MeshPhysicalMaterial({ color:0xffffff, transmission:1, thickness:0.7, roughness:0.04, ior:1.5, attenuationColor:new THREE.Color(0x9db4ff), attenuationDistance:3, envMapIntensity:1.2 });
+const warmGlow = new THREE.MeshBasicMaterial({ color:0xfff3dc });
+
+function box(w,h,d,mat,x,y,z,parent=scene){
+  const m = new THREE.Mesh(new THREE.BoxGeometry(w,h,d), mat);
+  m.position.set(x,y,z); m.castShadow = true; m.receiveShadow = true; parent.add(m); return m;
+}
+function cyl(rt,rb,h,mat,x,y,z,seg=48,parent=scene){
+  const m = new THREE.Mesh(new THREE.CylinderGeometry(rt,rb,h,seg), mat);
+  m.position.set(x,y,z); m.castShadow = true; m.receiveShadow = true; parent.add(m); return m;
+}
+function rod(a, b, r, mat){
+  const dir = new THREE.Vector3().subVectors(b, a), len = dir.length();
+  const m = new THREE.Mesh(new THREE.CylinderGeometry(r, r, len, 8), mat);
+  m.position.copy(a).addScaledVector(dir, 0.5);
+  m.quaternion.setFromUnitVectors(new THREE.Vector3(0,1,0), dir.normalize());
+  return m;
+}
+
+/* ---------------------------------------------------------------- textures */
+function marbleTexture(){
+  const s = 1024, c = document.createElement('canvas'); c.width = c.height = s;
+  const g = c.getContext('2d');
+  g.fillStyle = '#f2efe9'; g.fillRect(0,0,s,s);
+  for(let i=0;i<60;i++){
+    const x = Math.random()*s, y = Math.random()*s, r = 60+Math.random()*220;
+    const gr = g.createRadialGradient(x,y,0,x,y,r);
+    gr.addColorStop(0,'rgba(190,196,208,'+(0.05+Math.random()*0.08)+')'); gr.addColorStop(1,'rgba(190,196,208,0)');
+    g.fillStyle = gr; g.fillRect(0,0,s,s);
+  }
+  g.lineCap = 'round';
+  for(let i=0;i<26;i++){
+    g.strokeStyle = 'rgba(110,120,140,'+(0.08+Math.random()*0.14)+')'; g.lineWidth = 0.6+Math.random()*2.2;
+    g.beginPath(); let x = Math.random()*s, y = Math.random()*s; g.moveTo(x,y);
+    for(let k=0;k<5;k++){ const nx = x+(Math.random()-.5)*340, ny = y+(Math.random()-.5)*340; g.quadraticCurveTo(x+(Math.random()-.5)*200, y+(Math.random()-.5)*200, nx, ny); x = nx; y = ny; }
+    g.stroke();
+  }
+  g.strokeStyle = 'rgba(80,90,110,.2)'; g.lineWidth = 3; g.strokeRect(0,0,s,s);
+  const t = new THREE.CanvasTexture(c); t.wrapS = t.wrapT = THREE.RepeatWrapping; t.colorSpace = THREE.SRGBColorSpace; t.anisotropy = 8;
+  t.repeat.set(6,7); return t;
+}
+function fluteTexture(){
+  const c = document.createElement('canvas'); c.width = 256; c.height = 8;
+  const g = c.getContext('2d');
+  for(let i=0;i<8;i++){
+    const x = i*32, gg = g.createLinearGradient(x,0,x+32,0);
+    gg.addColorStop(0,'#fff'); gg.addColorStop(.5,'#555'); gg.addColorStop(1,'#fff');
+    g.fillStyle = gg; g.fillRect(x,0,32,8);
+  }
+  const t = new THREE.CanvasTexture(c); t.wrapS = t.wrapT = THREE.RepeatWrapping; t.repeat.set(3,1); return t;
+}
+const shaftMat = new THREE.MeshStandardMaterial({ color:0xf1ece2, roughness:0.62, bumpMap:fluteTexture(), bumpScale:2.2 });
+
+/* ------------------------------------------------------------------ ground */
+const ground = new THREE.Mesh(new THREE.CircleGeometry(220,64), new THREE.MeshStandardMaterial({ color:0xd9d5cc, roughness:0.92 }));
+ground.rotation.x = -Math.PI/2; ground.receiveShadow = true; scene.add(ground);
+
+/* --------------------------------------------------------------- the temple */
+const TOP = 1.4;                       // platform top
+box(36,TOP,44, stone, 0, TOP/2, -12);  // platform spans z +10 .. -34
+for(let j=1;j<=3;j++) box(36+2.4*j, TOP-0.35*j, 1.5*j, stone, 0, (TOP-0.35*j)/2, 10+0.75*j);
+
+const mf = new THREE.Mesh(new THREE.PlaneGeometry(36,42), new THREE.MeshStandardMaterial({ map:marbleTexture(), roughness:0.15, envMapIntensity:0.9 }));
+mf.rotation.x = -Math.PI/2; mf.position.set(0,TOP+0.002,-13); mf.receiveShadow = true; scene.add(mf);
+const runner = new THREE.Mesh(new THREE.PlaneGeometry(3.4,42), carpet); runner.rotation.x = -Math.PI/2; runner.position.set(0,TOP+0.012,-13); runner.receiveShadow = true; scene.add(runner);
+[-1.75,1.75].forEach(x=>{ const l = new THREE.Mesh(new THREE.PlaneGeometry(0.1,42), brass); l.rotation.x = -Math.PI/2; l.position.set(x,TOP+0.016,-13); scene.add(l); });
+
+const COL_H = 11;
+function makeColumn(x,z,h=COL_H){
+  const g = new THREE.Group(); g.position.set(x,TOP,z); scene.add(g);
+  box(2.3,0.35,2.3, stone, 0,0.175,0, g);
+  cyl(1.02,1.1,0.4, stone, 0,0.55,0, 40, g);
+  cyl(0.72,0.86,h-1.9, shaftMat, 0, 0.75+(h-1.9)/2, 0, 48, g);
+  cyl(1.02,0.76,0.5, stone, 0,h-1.1,0, 40, g);
+  box(2.4,0.4,2.4, stone, 0,h-0.65,0, g);
+  box(2.5,0.3,2.5, stone, 0,h-0.3,0, g);
+  return g;
+}
+for(let i=0;i<8;i++) makeColumn((i-3.5)*4.2, 7);                 // front colonnade
+for(let k=0;k<6;k++) [-9,9].forEach(x=>makeColumn(x, -2-6*k));      // interior colonnade
+
+// entablature + pediment
+box(37.4,1.5,6.6, stone, 0, TOP+COL_H+0.75, 7);
+const pedShape = new THREE.Shape(); pedShape.moveTo(-18.7,0); pedShape.lineTo(18.7,0); pedShape.lineTo(0,4.6); pedShape.closePath();
+const ped = new THREE.Mesh(new THREE.ExtrudeGeometry(pedShape,{ depth:6.6, bevelEnabled:false }), stone);
+ped.position.set(0, TOP+COL_H+1.5, 7-3.3); ped.castShadow = true; ped.receiveShadow = true; scene.add(ped);
+const tymShape = new THREE.Shape(); tymShape.moveTo(-16.6,0.5); tymShape.lineTo(16.6,0.5); tymShape.lineTo(0,3.95); tymShape.closePath();
+const tym = new THREE.Mesh(new THREE.ShapeGeometry(tymShape), stoneDk); tym.position.set(0, TOP+COL_H+1.5, 7+3.32); scene.add(tym);
+// scales emblem on the pediment
+const emblem = new THREE.Group(); emblem.position.set(0, TOP+COL_H+1.5+2.0, 7+3.45); scene.add(emblem);
+emblem.add(new THREE.Mesh(new THREE.TorusGeometry(1.25,0.06,12,64), brass));
+emblem.add(new THREE.Mesh(new THREE.BoxGeometry(0.1,2.0,0.08), brass));
+const eb = new THREE.Mesh(new THREE.BoxGeometry(2.2,0.08,0.08), brass); eb.position.y = 0.7; emblem.add(eb);
+[-1.05,1.05].forEach(x=>{ const d = new THREE.Mesh(new THREE.CylinderGeometry(0.34,0.26,0.05,32), brass); d.position.set(x,0.0,0); emblem.add(d); emblem.add(rod(V(x,0.7,0),V(x-0.25,0.04,0),0.012,brass)); emblem.add(rod(V(x,0.7,0),V(x+0.25,0.04,0),0.012,brass)); });
+
+// hall shell
+box(1.4,12.8,38.8, stone, -17, 7.8, -15.4);
+box(1.4,12.8,38.8, stone,  17, 7.8, -15.4);
+box(36,12.8,1.4, stone, 0, 7.8, -34.7);
+[-9,9].forEach(x=>box(1.8,1.0,40, stone, x, TOP+COL_H+0.5, -15));
+for(let k=0;k<6;k++) box(33.4,0.8,5, stone, 0, 13.8, 1.5-7*k);     // roof beams with sun gaps
+for(let k=0;k<6;k++) [-16.1,16.1].forEach(x=>box(0.9,11.4,1.2, stoneDk, x, TOP+5.7, -2-6*k)); // pilasters
+
+// back door of light
+const door = new THREE.Mesh(new THREE.PlaneGeometry(5.2,9.4), warmGlow); door.position.set(0, TOP+4.7, -33.97); scene.add(door);
+box(6.6,0.9,0.7, stoneDk, 0, TOP+9.85, -33.8);
+[-2.9,2.9].forEach(x=>box(0.7,9.4,0.7, stoneDk, x, TOP+4.7, -33.8));
+const doorLight = new THREE.PointLight(0xffefd2, 70, 0, 2); doorLight.position.set(0,TOP+5,-31.5); scene.add(doorLight);
+
+/* ----------------------------------------------------- pedestal + glass scales */
+const SZ = -22;
+cyl(3.1,3.4,0.5, polished, 0,TOP+0.25,SZ, 64);
+cyl(2.4,2.7,0.6, polished, 0,TOP+0.8,SZ, 64);
+cyl(1.4,1.9,1.9, polished, 0,TOP+2.05,SZ, 64);
+const PB = TOP + 3.0;
+const scales = new THREE.Group(); scales.position.set(0,PB,SZ); scene.add(scales);
+cyl(0.28,0.5,0.3, brass, 0,0.15,0, 40, scales);
+cyl(0.13,0.26,5.6, brass, 0,3.0,0, 32, scales);
+const finial = new THREE.Mesh(new THREE.SphereGeometry(0.3,32,24), cobalt); finial.position.y = 6.1; finial.castShadow = true; scales.add(finial);
+const beam = new THREE.Group(); beam.position.y = 6.1; scales.add(beam);
+const bar = new THREE.Mesh(new THREE.CylinderGeometry(0.07,0.07,6.4,20), brass); bar.rotation.z = Math.PI/2; bar.castShadow = true; beam.add(bar);
+function makePan(){
+  const g = new THREE.Group();
+  const disc = new THREE.Mesh(new THREE.CylinderGeometry(1.5,1.2,0.2,64), glass); disc.position.y = -2.7; g.add(disc);
+  const rim = new THREE.Mesh(new THREE.TorusGeometry(1.5,0.035,10,80), brass); rim.rotation.x = Math.PI/2; rim.position.y = -2.6; g.add(rim);
+  [90,210,330].forEach(d=>{ const a = d*Math.PI/180; g.add(rod(V(0,0,0), V(Math.cos(a)*1.45,-2.6,Math.sin(a)*1.45), 0.014, brass)); });
+  const hook = new THREE.Mesh(new THREE.TorusGeometry(0.1,0.022,10,28), brass); g.add(hook);
+  return g;
+}
+const panL = makePan(), panR = makePan();
+panL.position.x = -3.0; panR.position.x = 3.0; beam.add(panL, panR);
+const orb = new THREE.Mesh(new THREE.SphereGeometry(0.46,48,32), cobalt); orb.position.y = -2.1; orb.castShadow = true; panL.add(orb);
+const cube = new THREE.Mesh(new THREE.BoxGeometry(0.8,0.8,0.8), brass); cube.position.y = -2.2; cube.castShadow = true; panR.add(cube);
+
+/* ------------------------------------------------------------------- motes */
+const MN = isMobile ? 350 : 900;
+const mpos = new Float32Array(MN*3), mspd = new Float32Array(MN);
+for(let i=0;i<MN;i++){ mpos[i*3] = (Math.random()-.5)*32; mpos[i*3+1] = 2+Math.random()*11; mpos[i*3+2] = 4-Math.random()*37; mspd[i] = 0.05+Math.random()*0.12; }
+const mgeo = new THREE.BufferGeometry(); mgeo.setAttribute('position', new THREE.BufferAttribute(mpos,3));
+scene.add(new THREE.Points(mgeo, new THREE.PointsMaterial({ color:0xfff1d2, size:0.07, sizeAttenuation:true, transparent:true, opacity:0.85, depthWrite:false })));
+
+/* ------------------------------------------------------------------ lights */
+scene.add(new THREE.HemisphereLight(0xdbe6ff, 0xa89f8f, 0.85));
+const sun = new THREE.DirectionalLight(0xfff0d8, 3.6);
+sun.position.set(8,38,16); sun.target.position.set(0,0,-14);
+sun.castShadow = !isMobile;
+sun.shadow.mapSize.set(4096,4096);
+Object.assign(sun.shadow.camera,{ left:-38, right:38, top:38, bottom:-38, near:1, far:130 });
+sun.shadow.bias = -0.0002; sun.shadow.normalBias = 0.05;
+scene.add(sun, sun.target);
+
+/* ------------------------------------------------------------ camera path */
+const camCurve = new THREE.CatmullRomCurve3([
+  V(0,4.4,38),        // hero: facade
+  V(-4.2,3.6,19),     // practice
+  V(-4.2,4.0,-1),     // inside the hall
+  V(3.6,5.0,-9.5),    // process
+  V(-5.4,5.8,-13.5),  // standards
+  V(0,4.8,-12)        // contact
+], false, 'centripetal');
+const lookCurve = new THREE.CatmullRomCurve3([
+  V(-5.5,8.5,0),
+  V(5.5,6.8,2),
+  V(0,6.2,-22),
+  V(-3.0,5.4,-22),
+  V(3.6,5.6,-22),
+  V(-3.2,5.6,-24)
+], false, 'centripetal');
+
+/* ------------------------------------------------------------ scroll state */
+const sections = $$('main > section'), N = sections.length;
+let tops = [];
+const measure = ()=>{ tops = sections.map(s=>s.offsetTop); };
+measure();
+new ResizeObserver(measure).observe(document.body);
+addEventListener('load', measure);
+if(document.fonts && document.fonts.ready) document.fonts.ready.then(measure);
+function secPos(){
+  const y = scrollY; let i = 0;
+  for(let k=0;k<tops.length;k++) if(y >= tops[k]-1) i = k;
+  const nx = tops[i+1]; if(nx === undefined) return i;
+  return i + clamp((y-tops[i])/(nx-tops[i]), 0, 1);
+}
+let sp = 0, spVel = 0, introT = reduceMotion ? 1 : 0, started = false;
+let mx = 0, my = 0, mxs = 0, mys = 0;
+addEventListener('pointermove', e=>{ mx = e.clientX/innerWidth*2-1; my = e.clientY/innerHeight*2-1; }, {passive:true});
+
+/* -------------------------------------------------------------------- loop */
+const tmpP = new THREE.Vector3(), tmpT = new THREE.Vector3();
+let last = performance.now(), time = 0, tilt = 0;
+
+function frame(now){
+  const dt = Math.min((now-last)/1000, 0.05); last = now; time += dt;
+  const target = secPos(), prev = sp;
+  sp += (target-sp)*(1-Math.exp(-dt*3.0));
+  spVel += (((sp-prev)/Math.max(dt,1e-4)) - spVel)*(1-Math.exp(-dt*6));
+  if(started && introT < 1) introT = Math.min(1, introT + dt/3.4);
+  const ie = 1 - Math.pow(1-introT, 4);
+
+  const t = clamp(sp/(N-1), 0, 1);
+  camCurve.getPoint(t, tmpP); lookCurve.getPoint(t, tmpT);
+  mxs += (mx-mxs)*(1-Math.exp(-dt*3)); mys += (my-mys)*(1-Math.exp(-dt*3));
+  camera.position.set(
+    tmpP.x + mxs*0.8 + (1-ie)*-6,
+    tmpP.y - mys*0.45 + Math.sin(time*.45)*.08 + (1-ie)*9,
+    tmpP.z + (1-ie)*26
+  );
+  camera.lookAt(tmpT.x + mxs*0.3, tmpT.y - mys*0.2, tmpT.z);
+
+  const tt = Math.sin(time*0.7)*0.045 + clamp(spVel*1.3,-.28,.28);
+  tilt += (tt-tilt)*(1-Math.exp(-dt*3));
+  beam.rotation.z = tilt; panL.rotation.z = -tilt; panR.rotation.z = -tilt;
+  orb.position.y = -2.1 + Math.sin(time*1.6)*0.04; cube.rotation.y += dt*0.5;
+  finial.rotation.y += dt*0.6;
+
+  const arr = mgeo.attributes.position.array;
+  for(let i=0;i<MN;i++){ let y = arr[i*3+1] + mspd[i]*dt; if(y > 13) y = 2; arr[i*3+1] = y; arr[i*3] += Math.sin(time*0.3+i)*dt*0.05; }
+  mgeo.attributes.position.needsUpdate = true;
+
+  renderer.render(scene, camera);
+  requestAnimationFrame(frame);
+}
+requestAnimationFrame(frame);
+
+function resize(){
+  const w = innerWidth, h = innerHeight, a = w/h;
+  camera.aspect = a; camera.fov = a < 0.8 ? 66 : a < 1.2 ? 54 : 45; camera.updateProjectionMatrix();
+  renderer.setSize(w,h);
+}
+addEventListener('resize', resize); resize();
+
+/* ------------------------------------------------------------- UI helpers */
+function splitWords(el){
+  let i = 0;
+  (function walk(node){
+    [...node.childNodes].forEach(ch=>{
+      if(ch.nodeType === 3){
+        const frag = document.createDocumentFragment();
+        ch.textContent.split(/(\s+)/).forEach(part=>{
+          if(!part) return;
+          if(/^\s+$/.test(part)){ frag.appendChild(document.createTextNode(' ')); return; }
+          const w = document.createElement('span'); w.className = 'w';
+          const s = document.createElement('span'); s.textContent = part; s.style.setProperty('--i', i++);
+          w.appendChild(s); frag.appendChild(w);
+        });
+        ch.replaceWith(frag);
+      } else if(ch.nodeType === 1){ walk(ch); }
+    });
+  })(el);
+}
+$$('[data-split]').forEach(splitWords);
+
+const io = new IntersectionObserver(es=>es.forEach(e=>e.target.classList.toggle('in', e.isIntersecting)), { threshold:0.25 });
+sections.forEach(s=>io.observe(s));
+
+const nav = $('#nav'), navLinks = $$('#links a'), tlLinks = $$('#tl a'), tourBtn = $('#tour'), tourLabel = $('#tourlabel'), topbar = $('#topbar');
+function hud(){
+  nav.classList.toggle('scrolled', scrollY > 40);
+  const idx = clamp(Math.round(secPos()), 0, N-1);
+  navLinks.forEach(a=>a.classList.toggle('on', +a.dataset.go === idx));
+  tlLinks.forEach((a,i)=>a.classList.toggle('on', i===idx));
+  const p = clamp(secPos()/(N-1),0,1);
+  tourBtn.style.setProperty('--p', p); topbar.style.setProperty('--p', p);
+}
+addEventListener('scroll', hud, {passive:true}); hud();
+
+/* ---------------------------------------------------- smooth scroll + tour */
+let anim = null;
+const maxScroll = ()=>document.documentElement.scrollHeight - innerHeight;
+function scrollToY(y, dur, done){
+  cancelAnimationFrame(anim);
+  const y0 = scrollY, t0 = performance.now();
+  y = clamp(y, 0, maxScroll());
+  (function step(n){
+    const k = clamp((n-t0)/dur, 0, 1), e = k < .5 ? 4*k*k*k : 1 - Math.pow(-2*k+2,3)/2;
+    scrollTo(0, y0 + (y-y0)*e);
+    if(k < 1) anim = requestAnimationFrame(step); else { anim = null; done && done(); }
+  })(t0);
+}
+const goTo = i => { i = clamp(i,0,N-1); scrollToY(i === N-1 ? maxScroll() : tops[i], 2200); };
+
+let tourOn = false, tourTimer = null;
+function currentIndex(){
+  if(scrollY >= maxScroll()-4) return N-1;
+  let best = 0, d = 1e9;
+  tops.forEach((t,i)=>{ const dd = Math.abs(t-scrollY); if(dd < d){ d = dd; best = i; } });
+  return best;
+}
+function tourNext(){
+  if(!tourOn) return;
+  const next = (currentIndex()+1) % N;
+  const y = next === 0 ? 0 : next === N-1 ? maxScroll() : tops[next];
+  scrollToY(y, next === 0 ? 4600 : next === 1 ? 3800 : 3000, ()=>{ if(tourOn) tourTimer = setTimeout(tourNext, next === N-1 ? 5200 : 4800); });
+}
+function tourStart(){
+  tourOn = true; tourBtn.classList.add('on'); tourBtn.setAttribute('aria-pressed','true'); tourLabel.textContent = 'Pause tour';
+  clearTimeout(tourTimer); tourTimer = setTimeout(tourNext, 500);
+}
+function tourStop(){
+  if(!tourOn) return;
+  tourOn = false; clearTimeout(tourTimer); cancelAnimationFrame(anim); anim = null;
+  tourBtn.classList.remove('on'); tourBtn.setAttribute('aria-pressed','false'); tourLabel.textContent = 'Resume tour';
+}
+tourBtn.addEventListener('click', ()=> tourOn ? tourStop() : tourStart());
+['wheel','touchstart','pointerdown'].forEach(ev=>addEventListener(ev, e=>{
+  if(!tourOn) return;
+  if(e.target && e.target.closest && e.target.closest('#tour')) return;
+  tourStop();
+}, {passive:true}));
+addEventListener('keydown', e=>{
+  if(['ArrowDown','PageDown'].includes(e.key)){ e.preventDefault(); tourStop(); goTo(currentIndex()+1); }
+  else if(['ArrowUp','PageUp'].includes(e.key)){ e.preventDefault(); tourStop(); goTo(currentIndex()-1); }
+  else if(tourOn) tourStop();
+});
+$$('[data-go]').forEach(a=>a.addEventListener('click', e=>{ e.preventDefault(); tourStop(); goTo(+a.dataset.go); }));
+
+/* -------------------------------------------------------- card tilt, copy */
+$$('.card').forEach(c=>{
+  c.addEventListener('pointermove', e=>{
+    const r = c.getBoundingClientRect(), x = (e.clientX-r.left)/r.width, y = (e.clientY-r.top)/r.height;
+    c.style.transform = `rotateX(${(.5-y)*9}deg) rotateY(${(x-.5)*11}deg) translateZ(8px)`;
+    c.style.setProperty('--mx', x*100+'%'); c.style.setProperty('--my', y*100+'%');
+  });
+  c.addEventListener('pointerleave', ()=>{ c.style.transform = ''; });
+});
+const copyBtn = $('#copy');
+copyBtn.addEventListener('click', async ()=>{
+  try{ await navigator.clipboard.writeText('+211922991981'); copyBtn.textContent = 'Copied'; }
+  catch(e){ copyBtn.textContent = '+211922991981'; }
+  setTimeout(()=>copyBtn.textContent = 'Copy', 1800);
+});
+
+/* ------------------------------------------------------------------ intro */
+const prebar = $('#prebar'), prepct = $('#prepct');
+(function loadAnim(){
+  const t0 = performance.now(), dur = 1700;
+  (function s(n){
+    const k = clamp((n-t0)/dur,0,1), e = 1-Math.pow(1-k,3);
+    prebar.style.transform = `scaleX(${e})`; prepct.textContent = Math.round(e*100)+'%';
+    if(k<1) requestAnimationFrame(s);
+    else setTimeout(()=>{
+      window.__reveal(); started = true;
+      setTimeout(()=>sections[0].classList.add('in'), 500);
+      if(!reduceMotion) setTimeout(()=>{ if(scrollY < 10 && !tourOn) tourStart(); }, 7000);
+    }, 250);
+  })(t0);
+})();
+</script>
+</body>
+</html>
